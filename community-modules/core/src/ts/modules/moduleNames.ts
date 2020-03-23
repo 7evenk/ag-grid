@@ -40,6 +40,8 @@ export enum ModuleNames {
     VueModule = "@ag-grid-community/vue",
     PolymerModule = "@ag-grid-community/polymer",
 
+    DateTimeCellEditorModule = "@ag-grid-enterprise/date-time-cell-editor"
+
     // and then this, which is definitely not a grid module, as it should not have any dependency
     // on the grid (ie shouldn't even reference the Module interface)
     // ChartsModule = "@ag-grid-community/charts-core",

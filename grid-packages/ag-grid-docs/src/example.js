@@ -695,7 +695,7 @@ var desktopDefaultCols = [
                 // suppressMovable: true,
                 enableRowGroup: true,
                 enablePivot: true,
-                cellEditor: 'agRichSelectCellEditor',
+                cellEditor: 'agDateTimeCellEditor',
                 cellEditorParams: {
                     cellRenderer: 'countryCellRenderer',
                     values: ["Argentina", "Brazil", "Colombia", "France", "Germany", "Greece", "Iceland", "Ireland",

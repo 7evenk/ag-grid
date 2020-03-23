@@ -15,6 +15,7 @@ const MasterDetailModule = require("../../../../../enterprise-modules/master-det
 const MenuModule = require("../../../../../enterprise-modules/menu/dist/cjs/menuModule").MenuModule;
 const RangeSelectionModule = require("../../../../../enterprise-modules/range-selection/dist/cjs/rangeSelectionModule").RangeSelectionModule;
 const RichSelectModule = require("../../../../../enterprise-modules/rich-select/dist/cjs/richSelectModule").RichSelectModule;
+const DateTimeCellEditorModule = require("../../../../../enterprise-modules/date-time-cell-editor/dist/cjs/dateTimeCellEditorModule").DateTimeCellEditorModule;
 const RowGroupingModule = require("../../../../../enterprise-modules/row-grouping/dist/cjs/rowGroupingModule").RowGroupingModule;
 const ServerSideRowModelModule = require("../../../../../enterprise-modules/server-side-row-model/dist/cjs/serverSideRowModelModule").ServerSideRowModelModule;
 const SetFilterModule = require("../../../../../enterprise-modules/set-filter/dist/cjs/setFilterModule").SetFilterModule;
@@ -33,6 +34,7 @@ ModuleRegistry.register(MasterDetailModule);
 ModuleRegistry.register(MenuModule);
 ModuleRegistry.register(RangeSelectionModule);
 ModuleRegistry.register(RichSelectModule);
+ModuleRegistry.register(DateTimeCellEditorModule);
 ModuleRegistry.register(RowGroupingModule);
 ModuleRegistry.register(ServerSideRowModelModule);
 ModuleRegistry.register(SetFilterModule);
