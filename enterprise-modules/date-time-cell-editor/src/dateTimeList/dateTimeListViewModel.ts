@@ -6,8 +6,12 @@ export interface IDateTimeListViewModel {
 
 interface Page {
     title: string;
-    Next up: add rest of model for a calendar
     entries: Date[][];
+}
+
+interface Entry {
+    label: string;
+    Value: Date;
 }
 
 export class DateTimeListViewModel implements IDateTimeListViewModel {
@@ -18,6 +22,7 @@ export class DateTimeListViewModel implements IDateTimeListViewModel {
     
 
     constructor() {
-        this.minPage = 
+        this.minPage = -10;
+        this.maxPage = 10;
     }
 }
