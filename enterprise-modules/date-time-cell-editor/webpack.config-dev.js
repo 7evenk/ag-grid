@@ -9,7 +9,7 @@ module.exports = {
     entry: './src/dev.ts',
 
     resolve: {
-        extensions: ['.ts', '.js'],
+        extensions: ['.ts', '.js', '.scss'],
         // modules: [
         //     path.resolve(__dirname, 'src'),
         //     'node_modules'
@@ -20,15 +20,26 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                use: ["source-map-loader"],
-                enforce: "pre"
+                use: ['source-map-loader'],
+                enforce: 'pre',
             },
             {
                 test: /\.ts$/,
                 exclude: [/node_modules/],
-                use: 'awesome-typescript-loader'
-            }
-        ]
+                use: 'awesome-typescript-loader',
+            },
+            {
+                test: /\.scss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
+                ],
+            },
+        ],
     },
 
     plugins: [
@@ -37,5 +48,5 @@ module.exports = {
         }),
     ],
 
-    devtool: 'inline-source-map'
+    devtool: 'inline-source-map',
 };
